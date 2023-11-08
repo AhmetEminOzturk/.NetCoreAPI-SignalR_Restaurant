@@ -1,0 +1,17 @@
+C:\GitHub\.NetCoreAPI-SignalR_Restaurant\Restaurant\Core\Restaurant.Core.Application\bin\Debug\net6.0\Restaurant.Core.Application.deps.json
+C:\GitHub\.NetCoreAPI-SignalR_Restaurant\Restaurant\Core\Restaurant.Core.Application\bin\Debug\net6.0\Restaurant.Core.Application.dll
+C:\GitHub\.NetCoreAPI-SignalR_Restaurant\Restaurant\Core\Restaurant.Core.Application\bin\Debug\net6.0\Restaurant.Core.Application.pdb
+C:\GitHub\.NetCoreAPI-SignalR_Restaurant\Restaurant\Core\Restaurant.Core.Application\bin\Debug\net6.0\Restaurant.Core.Domain.dll
+C:\GitHub\.NetCoreAPI-SignalR_Restaurant\Restaurant\Core\Restaurant.Core.Application\bin\Debug\net6.0\Restaurant.Infrastructure.Persistence.dll
+C:\GitHub\.NetCoreAPI-SignalR_Restaurant\Restaurant\Core\Restaurant.Core.Application\bin\Debug\net6.0\Restaurant.Infrastructure.Persistence.pdb
+C:\GitHub\.NetCoreAPI-SignalR_Restaurant\Restaurant\Core\Restaurant.Core.Application\bin\Debug\net6.0\Restaurant.Core.Domain.pdb
+C:\GitHub\.NetCoreAPI-SignalR_Restaurant\Restaurant\Core\Restaurant.Core.Application\obj\Debug\net6.0\Restaurant.Core.Application.csproj.AssemblyReference.cache
+C:\GitHub\.NetCoreAPI-SignalR_Restaurant\Restaurant\Core\Restaurant.Core.Application\obj\Debug\net6.0\Restaurant.Core.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\GitHub\.NetCoreAPI-SignalR_Restaurant\Restaurant\Core\Restaurant.Core.Application\obj\Debug\net6.0\Restaurant.Core.Application.AssemblyInfoInputs.cache
+C:\GitHub\.NetCoreAPI-SignalR_Restaurant\Restaurant\Core\Restaurant.Core.Application\obj\Debug\net6.0\Restaurant.Core.Application.AssemblyInfo.cs
+C:\GitHub\.NetCoreAPI-SignalR_Restaurant\Restaurant\Core\Restaurant.Core.Application\obj\Debug\net6.0\Restaurant.Core.Application.csproj.CoreCompileInputs.cache
+C:\GitHub\.NetCoreAPI-SignalR_Restaurant\Restaurant\Core\Restaurant.Core.Application\obj\Debug\net6.0\Restaurant.Core.Application.csproj.CopyComplete
+C:\GitHub\.NetCoreAPI-SignalR_Restaurant\Restaurant\Core\Restaurant.Core.Application\obj\Debug\net6.0\Restaurant.Core.Application.dll
+C:\GitHub\.NetCoreAPI-SignalR_Restaurant\Restaurant\Core\Restaurant.Core.Application\obj\Debug\net6.0\refint\Restaurant.Core.Application.dll
+C:\GitHub\.NetCoreAPI-SignalR_Restaurant\Restaurant\Core\Restaurant.Core.Application\obj\Debug\net6.0\Restaurant.Core.Application.pdb
+C:\GitHub\.NetCoreAPI-SignalR_Restaurant\Restaurant\Core\Restaurant.Core.Application\obj\Debug\net6.0\ref\Restaurant.Core.Application.dll

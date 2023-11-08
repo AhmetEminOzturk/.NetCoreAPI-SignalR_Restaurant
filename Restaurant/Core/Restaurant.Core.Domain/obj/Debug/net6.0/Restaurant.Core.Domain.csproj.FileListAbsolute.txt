@@ -1,0 +1,11 @@
+C:\GitHub\.NetCoreAPI-SignalR_Restaurant\Restaurant\Core\Restaurant.Core.Domain\bin\Debug\net6.0\Restaurant.Core.Domain.deps.json
+C:\GitHub\.NetCoreAPI-SignalR_Restaurant\Restaurant\Core\Restaurant.Core.Domain\bin\Debug\net6.0\Restaurant.Core.Domain.dll
+C:\GitHub\.NetCoreAPI-SignalR_Restaurant\Restaurant\Core\Restaurant.Core.Domain\bin\Debug\net6.0\Restaurant.Core.Domain.pdb
+C:\GitHub\.NetCoreAPI-SignalR_Restaurant\Restaurant\Core\Restaurant.Core.Domain\obj\Debug\net6.0\Restaurant.Core.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\GitHub\.NetCoreAPI-SignalR_Restaurant\Restaurant\Core\Restaurant.Core.Domain\obj\Debug\net6.0\Restaurant.Core.Domain.AssemblyInfoInputs.cache
+C:\GitHub\.NetCoreAPI-SignalR_Restaurant\Restaurant\Core\Restaurant.Core.Domain\obj\Debug\net6.0\Restaurant.Core.Domain.AssemblyInfo.cs
+C:\GitHub\.NetCoreAPI-SignalR_Restaurant\Restaurant\Core\Restaurant.Core.Domain\obj\Debug\net6.0\Restaurant.Core.Domain.csproj.CoreCompileInputs.cache
+C:\GitHub\.NetCoreAPI-SignalR_Restaurant\Restaurant\Core\Restaurant.Core.Domain\obj\Debug\net6.0\Restaurant.Core.Domain.dll
+C:\GitHub\.NetCoreAPI-SignalR_Restaurant\Restaurant\Core\Restaurant.Core.Domain\obj\Debug\net6.0\refint\Restaurant.Core.Domain.dll
+C:\GitHub\.NetCoreAPI-SignalR_Restaurant\Restaurant\Core\Restaurant.Core.Domain\obj\Debug\net6.0\Restaurant.Core.Domain.pdb
+C:\GitHub\.NetCoreAPI-SignalR_Restaurant\Restaurant\Core\Restaurant.Core.Domain\obj\Debug\net6.0\ref\Restaurant.Core.Domain.dll

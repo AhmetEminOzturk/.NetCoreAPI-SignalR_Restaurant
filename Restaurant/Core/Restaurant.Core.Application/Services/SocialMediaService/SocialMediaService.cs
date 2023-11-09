@@ -1,5 +1,11 @@
-﻿using Restaurant.Core.Application.Services.SocialMediaService;
+﻿using AutoMapper;
+using Restaurant.Core.Application.Dtos.SocialMedia.Requests;
+using Restaurant.Core.Application.Dtos.SocialMedia;
+using Restaurant.Core.Application.Services.SocialMediaService;
+using Restaurant.Core.Application.Services.SocialMediaService;
 using Restaurant.Core.Domain.Entities;
+using Restaurant.Infrastructure.Persistence.Repositories;
+using Restaurant.Infrastructure.Persistence.Repositories.SocialMediaRepository;
 using Restaurant.Infrastructure.Persistence.Repositories.SocialMediaRepository;
 using System;
 using System.Collections.Generic;
@@ -9,38 +15,19 @@ using System.Threading.Tasks;
 
 namespace Restaurant.Core.Application.Services.SocialMediaService
 {
-    public class SocialMediaService : ISocialMediaService
+    public class SocialMediaService : GenericService<SocialMedia, GenericSocialMediaDto>, ISocialMediaService
     {
         private readonly ISocialMediaRepository _socialMediaRepository;
-
-        public SocialMediaService(ISocialMediaRepository socialMediaRepository)
+        public SocialMediaService(IGenericRepository<SocialMedia> repository, IMapper mapper, ISocialMediaRepository socialMediaRepository) : base(repository, mapper)
         {
             _socialMediaRepository = socialMediaRepository;
         }
 
-        public void TAdd(SocialMedia entity)
+        public void TAdd(CreateSocialMediaRequest createSocialMediaRequest)
         {
-            _socialMediaRepository.Add(entity);
-        }
-
-        public void TDelete(SocialMedia entity)
-        {
-            _socialMediaRepository.Delete(entity);
-        }
-
-        public SocialMedia TGetByID(int id)
-        {
-            return _socialMediaRepository.GetByID(id);
-        }
-
-        public List<SocialMedia> TGetListAll()
-        {
-            return _socialMediaRepository.GetListAll();
-        }
-
-        public void TUpdate(SocialMedia entity)
-        {
-            _socialMediaRepository.Update(entity);
+            var newEntity = _mapper.Map<SocialMedia>(createSocialMediaRequest);
+            _socialMediaRepository.Add(newEntity);
+            
         }
     }
 }

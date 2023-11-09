@@ -1,4 +1,10 @@
-﻿using Restaurant.Core.Domain.Entities;
+﻿using AutoMapper;
+using Restaurant.Core.Application.Dtos.About.Requests;
+using Restaurant.Core.Application.Dtos.About;
+using Restaurant.Core.Application.Services.AboutService;
+using Restaurant.Core.Domain.Entities;
+using Restaurant.Infrastructure.Persistence.Repositories;
+using Restaurant.Infrastructure.Persistence.Repositories.AboutRepository;
 using Restaurant.Infrastructure.Persistence.Repositories.AboutRepository;
 using System;
 using System.Collections.Generic;
@@ -8,38 +14,18 @@ using System.Threading.Tasks;
 
 namespace Restaurant.Core.Application.Services.AboutService
 {
-    public class AboutService : IAboutService
+    public class AboutService : GenericService<About, GenericAboutDto>, IAboutService
     {
         private readonly IAboutRepository _aboutRepository;
-
-        public AboutService(IAboutRepository aboutRepository)
+        public AboutService(IGenericRepository<About> repository, IMapper mapper, IAboutRepository aboutRepository) : base(repository, mapper)
         {
             _aboutRepository = aboutRepository;
         }
 
-        public void TAdd(About entity)
+        public void TAdd(CreateAboutRequest createAboutRequest)
         {
-            _aboutRepository.Add(entity);
-        }
-
-        public void TDelete(About entity)
-        {
-            _aboutRepository.Delete(entity);
-        }
-
-        public About TGetByID(int id)
-        {
-            return _aboutRepository.GetByID(id);
-        }
-
-        public List<About> TGetListAll()
-        {
-            return _aboutRepository.GetListAll();
-        }
-
-        public void TUpdate(About entity)
-        {
-            _aboutRepository.Update(entity);
+            var newEntity = _mapper.Map<About>(createAboutRequest);
+            _aboutRepository.Add(newEntity);          
         }
     }
 }

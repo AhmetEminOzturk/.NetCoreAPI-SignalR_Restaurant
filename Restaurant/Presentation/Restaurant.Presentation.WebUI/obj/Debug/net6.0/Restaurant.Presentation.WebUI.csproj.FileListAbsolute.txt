@@ -70,3 +70,5 @@ C:\GitHub\.NetCoreAPI-SignalR_Restaurant\Restaurant\Presentation\Restaurant.Pres
 C:\GitHub\.NetCoreAPI-SignalR_Restaurant\Restaurant\Presentation\Restaurant.Presentation.WebUI\obj\Debug\net6.0\Restaurant.Presentation.WebUI.pdb
 C:\GitHub\.NetCoreAPI-SignalR_Restaurant\Restaurant\Presentation\Restaurant.Presentation.WebUI\obj\Debug\net6.0\Restaurant.Presentation.WebUI.genruntimeconfig.cache
 C:\GitHub\.NetCoreAPI-SignalR_Restaurant\Restaurant\Presentation\Restaurant.Presentation.WebUI\obj\Debug\net6.0\ref\Restaurant.Presentation.WebUI.dll
+C:\GitHub\.NetCoreAPI-SignalR_Restaurant\Restaurant\Presentation\Restaurant.Presentation.WebUI\bin\Debug\net6.0\AutoMapper.dll
+C:\GitHub\.NetCoreAPI-SignalR_Restaurant\Restaurant\Presentation\Restaurant.Presentation.WebUI\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll

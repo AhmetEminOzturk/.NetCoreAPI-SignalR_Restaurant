@@ -1,5 +1,11 @@
-﻿using Restaurant.Core.Application.Services.FeatureService;
+﻿using AutoMapper;
+using Restaurant.Core.Application.Dtos.Feature.Requests;
+using Restaurant.Core.Application.Dtos.Feature;
+using Restaurant.Core.Application.Services.FeatureService;
+using Restaurant.Core.Application.Services.FeatureService;
 using Restaurant.Core.Domain.Entities;
+using Restaurant.Infrastructure.Persistence.Repositories;
+using Restaurant.Infrastructure.Persistence.Repositories.FeatureRepository;
 using Restaurant.Infrastructure.Persistence.Repositories.FeatureRepository;
 using System;
 using System.Collections.Generic;
@@ -9,38 +15,19 @@ using System.Threading.Tasks;
 
 namespace Restaurant.Core.Application.Services.FeatureService
 {
-    public class FeatureService : IFeatureService
+    public class FeatureService : GenericService<Feature, GenericFeatureDto>, IFeatureService
     {
         private readonly IFeatureRepository _featureRepository;
-
-        public FeatureService(IFeatureRepository featureRepository)
+        public FeatureService(IGenericRepository<Feature> repository, IMapper mapper, IFeatureRepository featureRepository) : base(repository, mapper)
         {
             _featureRepository = featureRepository;
         }
 
-        public void TAdd(Feature entity)
+        public void TAdd(CreateFeatureRequest createFeatureRequest)
         {
-            _featureRepository.Add(entity);
-        }
-
-        public void TDelete(Feature entity)
-        {
-            _featureRepository.Delete(entity);
-        }
-
-        public Feature TGetByID(int id)
-        {
-            return _featureRepository.GetByID(id);
-        }
-
-        public List<Feature> TGetListAll()
-        {
-            return _featureRepository.GetListAll();
-        }
-
-        public void TUpdate(Feature entity)
-        {
-            _featureRepository.Update(entity);
+            var newEntity = _mapper.Map<Feature>(createFeatureRequest);
+            _featureRepository.Add(newEntity);
+            
         }
     }
 }

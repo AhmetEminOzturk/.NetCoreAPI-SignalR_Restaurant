@@ -1,5 +1,11 @@
-﻿using Restaurant.Core.Application.Services.DiscountService;
+﻿using AutoMapper;
+using Restaurant.Core.Application.Dtos.Discount.Requests;
+using Restaurant.Core.Application.Dtos.Discount;
+using Restaurant.Core.Application.Services.DiscountService;
+using Restaurant.Core.Application.Services.DiscountService;
 using Restaurant.Core.Domain.Entities;
+using Restaurant.Infrastructure.Persistence.Repositories;
+using Restaurant.Infrastructure.Persistence.Repositories.DiscountRepository;
 using Restaurant.Infrastructure.Persistence.Repositories.DiscountRepository;
 using System;
 using System.Collections.Generic;
@@ -9,38 +15,19 @@ using System.Threading.Tasks;
 
 namespace Restaurant.Core.Application.Services.DiscountService
 {
-    public class DiscountService: IDiscountService
+    public class DiscountService : GenericService<Discount, GenericDiscountDto>, IDiscountService
     {
         private readonly IDiscountRepository _discountRepository;
-
-        public DiscountService(IDiscountRepository discountRepository)
+        public DiscountService(IGenericRepository<Discount> repository, IMapper mapper, IDiscountRepository discountRepository) : base(repository, mapper)
         {
             _discountRepository = discountRepository;
         }
 
-        public void TAdd(Discount entity)
+        public void TAdd(CreateDiscountRequest createDiscountRequest)
         {
-            _discountRepository.Add(entity);
-        }
-
-        public void TDelete(Discount entity)
-        {
-            _discountRepository.Delete(entity);
-        }
-
-        public Discount TGetByID(int id)
-        {
-            return _discountRepository.GetByID(id);
-        }
-
-        public List<Discount> TGetListAll()
-        {
-            return _discountRepository.GetListAll();
-        }
-
-        public void TUpdate(Discount entity)
-        {
-            _discountRepository.Update(entity);
+            var newEntity = _mapper.Map<Discount>(createDiscountRequest);
+            _discountRepository.Add(newEntity);
+            
         }
     }
 }

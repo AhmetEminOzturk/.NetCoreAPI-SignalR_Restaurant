@@ -12,7 +12,7 @@ namespace Restaurant.Core.Application.Services
     public class GenericService<Entity, Dto> : IGenericService<Entity, Dto> where Entity : BaseEntity where Dto : class
     {
         private readonly IGenericRepository<Entity> _repository;
-        private readonly IMapper _mapper;
+        protected readonly IMapper _mapper;
 
         public GenericService(IGenericRepository<Entity> repository, IMapper mapper)
         {

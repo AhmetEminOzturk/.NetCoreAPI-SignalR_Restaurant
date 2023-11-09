@@ -1,5 +1,11 @@
-﻿using Restaurant.Core.Application.Services.ProductService;
+﻿using AutoMapper;
+using Restaurant.Core.Application.Dtos.Product.Requests;
+using Restaurant.Core.Application.Dtos.Product;
+using Restaurant.Core.Application.Services.ProductService;
+using Restaurant.Core.Application.Services.ProductService;
 using Restaurant.Core.Domain.Entities;
+using Restaurant.Infrastructure.Persistence.Repositories;
+using Restaurant.Infrastructure.Persistence.Repositories.ProductRepository;
 using Restaurant.Infrastructure.Persistence.Repositories.ProductRepository;
 using System;
 using System.Collections.Generic;
@@ -9,38 +15,19 @@ using System.Threading.Tasks;
 
 namespace Restaurant.Core.Application.Services.ProductService
 {
-    public class ProductService : IProductService
+    public class ProductService : GenericService<Product, GenericProductDto>, IProductService
     {
         private readonly IProductRepository _productRepository;
-
-        public ProductService(IProductRepository productRepository)
+        public ProductService(IGenericRepository<Product> repository, IMapper mapper, IProductRepository productRepository) : base(repository, mapper)
         {
             _productRepository = productRepository;
         }
 
-        public void TAdd(Product entity)
+        public void TAdd(CreateProductRequest createProductRequest)
         {
-            _productRepository.Add(entity);
-        }
-
-        public void TDelete(Product entity)
-        {
-            _productRepository.Delete(entity);
-        }
-
-        public Product TGetByID(int id)
-        {
-            return _productRepository.GetByID(id);
-        }
-
-        public List<Product> TGetListAll()
-        {
-            return _productRepository.GetListAll();
-        }
-
-        public void TUpdate(Product entity)
-        {
-            _productRepository.Update(entity);
+            var newEntity = _mapper.Map<Product>(createProductRequest);
+            _productRepository.Add(newEntity);
+         
         }
     }
 }

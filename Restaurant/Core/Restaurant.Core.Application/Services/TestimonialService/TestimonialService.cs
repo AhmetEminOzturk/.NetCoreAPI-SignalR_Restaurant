@@ -15,13 +15,17 @@ namespace Restaurant.Core.Application.Services.TestimonialService
 {
     public class TestimonialService : GenericService<Testimonial, GenericTestimonialDto>, ITestimonialService
     {
-        public TestimonialService(IGenericRepository<Testimonial> repository, IMapper mapper) : base(repository, mapper)
+        private readonly ITestimonialRepository _testimonialRepository;
+        public TestimonialService(IGenericRepository<Testimonial> repository, IMapper mapper, ITestimonialRepository testimonialRepository) : base(repository, mapper)
         {
+            _testimonialRepository = testimonialRepository;
         }
 
         public void TAdd(CreateTestimonialRequest createTestimonialRequest)
         {
-            throw new NotImplementedException();
+            var newEntity = _mapper.Map<Testimonial>(createTestimonialRequest);
+            _testimonialRepository.Add(newEntity);
+            
         }
     }
 }

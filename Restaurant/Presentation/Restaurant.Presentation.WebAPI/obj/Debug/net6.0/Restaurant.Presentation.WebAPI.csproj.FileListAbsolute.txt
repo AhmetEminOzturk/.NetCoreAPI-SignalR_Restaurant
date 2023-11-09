@@ -70,3 +70,9 @@ C:\GitHub\.NetCoreAPI-SignalR_Restaurant\Restaurant\Presentation\Restaurant.Pres
 C:\GitHub\.NetCoreAPI-SignalR_Restaurant\Restaurant\Presentation\Restaurant.Presentation.WebAPI\obj\Debug\net6.0\Restaurant.Presentation.WebAPI.pdb
 C:\GitHub\.NetCoreAPI-SignalR_Restaurant\Restaurant\Presentation\Restaurant.Presentation.WebAPI\obj\Debug\net6.0\Restaurant.Presentation.WebAPI.genruntimeconfig.cache
 C:\GitHub\.NetCoreAPI-SignalR_Restaurant\Restaurant\Presentation\Restaurant.Presentation.WebAPI\obj\Debug\net6.0\ref\Restaurant.Presentation.WebAPI.dll
+C:\GitHub\.NetCoreAPI-SignalR_Restaurant\Restaurant\Presentation\Restaurant.Presentation.WebAPI\bin\Debug\net6.0\AutoMapper.dll
+C:\GitHub\.NetCoreAPI-SignalR_Restaurant\Restaurant\Presentation\Restaurant.Presentation.WebAPI\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\GitHub\.NetCoreAPI-SignalR_Restaurant\Restaurant\Presentation\Restaurant.Presentation.WebAPI\bin\Debug\net6.0\Humanizer.dll
+C:\GitHub\.NetCoreAPI-SignalR_Restaurant\Restaurant\Presentation\Restaurant.Presentation.WebAPI\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\GitHub\.NetCoreAPI-SignalR_Restaurant\Restaurant\Presentation\Restaurant.Presentation.WebAPI\bin\Debug\net6.0\Autofac.dll
+C:\GitHub\.NetCoreAPI-SignalR_Restaurant\Restaurant\Presentation\Restaurant.Presentation.WebAPI\bin\Debug\net6.0\Autofac.Extensions.DependencyInjection.dll

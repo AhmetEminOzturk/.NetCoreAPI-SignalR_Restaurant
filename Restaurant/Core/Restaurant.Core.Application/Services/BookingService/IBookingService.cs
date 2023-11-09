@@ -1,4 +1,6 @@
 ﻿using Restaurant.Core.Application.Dtos.Booking;
+using Restaurant.Core.Application.Dtos.Booking.Requests;
+using Restaurant.Core.Application.Dtos.Testimonial.Requests;
 using Restaurant.Core.Domain.Entities;
 using System;
 using System.Collections.Generic;
@@ -10,5 +12,6 @@ namespace Restaurant.Core.Application.Services.BookingService
 {
     public interface IBookingService : IGenericService<Booking ,GenericBookingDto>
     {
+        void TAdd(CreateBookingRequest createBookingRequest);
     }
 }

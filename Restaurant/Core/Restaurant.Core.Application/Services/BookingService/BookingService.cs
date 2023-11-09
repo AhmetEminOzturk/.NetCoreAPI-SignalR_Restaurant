@@ -1,4 +1,10 @@
-﻿using Restaurant.Core.Domain.Entities;
+﻿using AutoMapper;
+using Restaurant.Core.Application.Dtos.Booking.Requests;
+using Restaurant.Core.Application.Dtos.Booking;
+using Restaurant.Core.Application.Services.BookingService;
+using Restaurant.Core.Domain.Entities;
+using Restaurant.Infrastructure.Persistence.Repositories;
+using Restaurant.Infrastructure.Persistence.Repositories.BookingRepository;
 using Restaurant.Infrastructure.Persistence.Repositories.BookingRepository;
 using System;
 using System.Collections.Generic;
@@ -8,38 +14,18 @@ using System.Threading.Tasks;
 
 namespace Restaurant.Core.Application.Services.BookingService
 {
-    public class BookingService : IBookingService
+    public class BookingService : GenericService<Booking, GenericBookingDto>, IBookingService
     {
         private readonly IBookingRepository _bookingRepository;
-
-        public BookingService(IBookingRepository bookingRepository)
+        public BookingService(IGenericRepository<Booking> repository, IMapper mapper, IBookingRepository bookingRepository) : base(repository, mapper)
         {
             _bookingRepository = bookingRepository;
         }
 
-        public void TAdd(Booking entity)
+        public void TAdd(CreateBookingRequest createBookingRequest)
         {
-            _bookingRepository.Add(entity);
-        }
-
-        public void TDelete(Booking entity)
-        {
-            _bookingRepository.Delete(entity);
-        }
-
-        public Booking TGetByID(int id)
-        {
-            return _bookingRepository.GetByID(id);
-        }
-
-        public List<Booking> TGetListAll()
-        {
-            return _bookingRepository.GetListAll();
-        }
-
-        public void TUpdate(Booking entity)
-        {
-            _bookingRepository.Update(entity);
+            var newEntity = _mapper.Map<Booking>(createBookingRequest);
+            _bookingRepository.Add(newEntity);
         }
     }
 }

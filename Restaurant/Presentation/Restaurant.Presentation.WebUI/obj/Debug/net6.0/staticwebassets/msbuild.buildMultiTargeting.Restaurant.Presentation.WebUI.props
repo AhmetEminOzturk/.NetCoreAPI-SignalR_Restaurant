@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Restaurant.Presentation.WebUI.props" />
+</Project>

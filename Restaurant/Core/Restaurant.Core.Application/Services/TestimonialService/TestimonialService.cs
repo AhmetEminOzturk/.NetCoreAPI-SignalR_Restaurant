@@ -1,5 +1,9 @@
-﻿using Restaurant.Core.Application.Services.TestimonialService;
+﻿using AutoMapper;
+using Restaurant.Core.Application.Dtos.Testimonial;
+using Restaurant.Core.Application.Dtos.Testimonial.Requests;
+using Restaurant.Core.Application.Services.TestimonialService;
 using Restaurant.Core.Domain.Entities;
+using Restaurant.Infrastructure.Persistence.Repositories;
 using Restaurant.Infrastructure.Persistence.Repositories.TestimonialRepository;
 using System;
 using System.Collections.Generic;
@@ -9,38 +13,15 @@ using System.Threading.Tasks;
 
 namespace Restaurant.Core.Application.Services.TestimonialService
 {
-    public class TestimonialService : ITestimonialService
+    public class TestimonialService : GenericService<Testimonial, GenericTestimonialDto>, ITestimonialService
     {
-        private readonly ITestimonialRepository _testimonialRepository;
-
-        public TestimonialService(ITestimonialRepository testimonialRepository)
+        public TestimonialService(IGenericRepository<Testimonial> repository, IMapper mapper) : base(repository, mapper)
         {
-            _testimonialRepository = testimonialRepository;
         }
 
-        public void TAdd(Testimonial entity)
+        public void TAdd(CreateTestimonialRequest createTestimonialRequest)
         {
-            _testimonialRepository.Add(entity);
-        }
-
-        public void TDelete(Testimonial entity)
-        {
-            _testimonialRepository.Delete(entity);
-        }
-
-        public Testimonial TGetByID(int id)
-        {
-            return _testimonialRepository.GetByID(id);
-        }
-
-        public List<Testimonial> TGetListAll()
-        {
-            return _testimonialRepository.GetListAll();
-        }
-
-        public void TUpdate(Testimonial entity)
-        {
-            _testimonialRepository.Update(entity);
+            throw new NotImplementedException();
         }
     }
 }

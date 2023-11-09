@@ -1,10 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "hv5CtMMO0uG7NXdY57RviXcNd474VZGRRU57SK67CQ+EznVrHUSFzeDX9ELaHFzzf6aKUv0bXop0Qs6z5IMwWg==",
+  "dgSpecHash": "kIhplzexP5WQLSvF9jW4BAJjhBN16oet9TR219QL7U6rtEwNwqyn/nqSIdVoeowDQcYQsxwaToI84J7CMYSE/g==",
   "success": true,
   "projectFilePath": "C:\\GitHub\\.NetCoreAPI-SignalR_Restaurant\\Restaurant\\Presentation\\Restaurant.Presentation.WebAPI\\Restaurant.Presentation.WebAPI.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\eAo\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
+    "C:\\Users\\eAo\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
+    "C:\\Users\\eAo\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",
+    "C:\\Users\\eAo\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\eAo\\.nuget\\packages\\microsoft.data.sqlclient\\2.1.4\\microsoft.data.sqlclient.2.1.4.nupkg.sha512",
     "C:\\Users\\eAo\\.nuget\\packages\\microsoft.data.sqlclient.sni.runtime\\2.1.1\\microsoft.data.sqlclient.sni.runtime.2.1.1.nupkg.sha512",
     "C:\\Users\\eAo\\.nuget\\packages\\microsoft.entityframeworkcore\\6.0.24\\microsoft.entityframeworkcore.6.0.24.nupkg.sha512",

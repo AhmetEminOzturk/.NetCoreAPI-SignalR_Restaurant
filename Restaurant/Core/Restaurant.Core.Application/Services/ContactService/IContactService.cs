@@ -1,4 +1,5 @@
-﻿using Restaurant.Core.Domain.Entities;
+﻿using Restaurant.Core.Application.Dtos.Contact;
+using Restaurant.Core.Domain.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Restaurant.Core.Application.Services.ContactService
 {
-    public interface IContactService : IService<Contact>
+    public interface IContactService : IGenericService<Contact , GenericContactDto>
     {
     }
 }

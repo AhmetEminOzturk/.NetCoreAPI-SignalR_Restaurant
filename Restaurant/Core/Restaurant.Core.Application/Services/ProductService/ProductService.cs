@@ -12,6 +12,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Restaurant.Core.Application.Dtos.Product.Responses;
 
 namespace Restaurant.Core.Application.Services.ProductService
 {
@@ -28,6 +29,12 @@ namespace Restaurant.Core.Application.Services.ProductService
             var newEntity = _mapper.Map<Product>(createProductRequest);
             _productRepository.Add(newEntity);
          
+        }
+
+        public List<DisplayProductsWithCategoriesResponse> TGetProductsWithCategories()
+        {
+            var products = _productRepository.GetProductsWithCategories();
+            return _mapper.Map<List<DisplayProductsWithCategoriesResponse>>(products);
         }
     }
 }

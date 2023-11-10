@@ -20,6 +20,7 @@ namespace Restaurant.Core.Application.Mappings
             CreateMap<Product, UpdateProductRequest>().ReverseMap();
             CreateMap<Product, DisplayProductResponse>().ReverseMap();
             CreateMap<Product, GetProductResponse>().ReverseMap();
+            CreateMap<Product, DisplayProductsWithCategoriesResponse>().ReverseMap();
         }
     }
 }

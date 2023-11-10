@@ -28,6 +28,11 @@ namespace Restaurant.Presentation.WebAPI.Controllers
             var value = _productService.TGetByID(id);
             return Ok(value);
         }
+        [HttpGet("[action]")]
+        public async Task<IActionResult> GetProductsWithCategory()
+        {
+            return Ok(_productService.TGetProductsWithCategories());
+        }
         [HttpPost]
         public IActionResult Create(CreateProductRequest createProductRequest)
         {

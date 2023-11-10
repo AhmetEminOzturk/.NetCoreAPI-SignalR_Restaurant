@@ -1,4 +1,5 @@
-﻿using Restaurant.Core.Domain.Entities;
+﻿using Microsoft.EntityFrameworkCore;
+using Restaurant.Core.Domain.Entities;
 using Restaurant.Infrastructure.Persistence.Context;
 using Restaurant.Infrastructure.Persistence.Repositories.ProductRepository;
 using System;
@@ -13,6 +14,11 @@ namespace Restaurant.Infrastructure.Persistence.Repositories.ProductRepository
     {
         public EfProductRepository(RestaurantDbContext context) : base(context)
         {
+        }
+
+        public List<Product> GetProductsWithCategories()
+        {
+            return _context.Products.Include(x => x.Category).ToList(); 
         }
     }
 }

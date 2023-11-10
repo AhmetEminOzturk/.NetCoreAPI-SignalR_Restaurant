@@ -9,5 +9,6 @@ namespace Restaurant.Infrastructure.Persistence.Repositories.ProductRepository
 {
     public interface IProductRepository :IGenericRepository<Product>
     {
+        List<Product> GetProductsWithCategories();
     }
 }

@@ -9,7 +9,7 @@ namespace Restaurant.Infrastructure.Persistence.Repositories
 {
     public class GenericRepository<T> : IGenericRepository<T> where T : class
     {
-        private readonly RestaurantDbContext _context;
+        protected readonly RestaurantDbContext _context;
 
         public GenericRepository(RestaurantDbContext context)
         {

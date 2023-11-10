@@ -16,8 +16,16 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\GitHub\.NetCoreAPI-SignalR_Restaurant\Restaurant\Presentation\Restaurant.Presentation.WebUI
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/GitHub/.NetCoreAPI-SignalR_Restaurant/Restaurant/Presentation/Restaurant.Presentation.WebUI/Views/AdminCategories/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5DYXRlZ29yaWVzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/GitHub/.NetCoreAPI-SignalR_Restaurant/Restaurant/Presentation/Restaurant.Presentation.WebUI/Views/AdminCategories/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5DYXRlZ29yaWVzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/GitHub/.NetCoreAPI-SignalR_Restaurant/Restaurant/Presentation/Restaurant.Presentation.WebUI/Views/AdminCategories/Update.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5DYXRlZ29yaWVzXFVwZGF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/GitHub/.NetCoreAPI-SignalR_Restaurant/Restaurant/Presentation/Restaurant.Presentation.WebUI/Views/AdminLayouts/Index.cshtml]

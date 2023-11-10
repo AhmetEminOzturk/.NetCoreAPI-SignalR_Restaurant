@@ -1,0 +1,33 @@
+﻿@model GenericCategoryDto
+@{
+    ViewData["Title"] = "Update";
+    Layout = "~/Views/AdminLayouts/Index.cshtml";
+}
+
+<div class="content">
+	<div class="container-fluid">
+		<h4 class="page-title">Kategori Islemleri</h4>
+		<div class="row">
+			<div class="col-md-12">
+				<form method="post">
+					<div class="card">
+						<div class="card-header">
+							<div class="card-title">Yeni Kategori Girisi</div>
+						</div>
+						<div class="card-body">
+							<input type="hidden" asp-for="Id" />
+							<div class="form-group">
+								<label for="name">Kategori Adi</label>
+								<input type="text" class="form-control" asp-for="Name" id="name">
+							</div>
+						</div>
+						<div class="card-action">
+							<button class="btn btn-primary">Guncelle</button>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+

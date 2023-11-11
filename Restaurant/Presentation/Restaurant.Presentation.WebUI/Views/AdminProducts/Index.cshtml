@@ -1,4 +1,4 @@
-﻿@model List<GenericCategoryDto>
+﻿@model List<DisplayProductsWithCategoriesResponse>
 @{
     ViewData["Title"] = "Index";
     Layout = "~/Views/AdminLayouts/Index.cshtml";
@@ -6,22 +6,24 @@
 
 <div class="content">
 	<div class="container-fluid">
-		<h4 class="page-title">Kategori Islemleri</h4>
+		<h4 class="page-title">Urun Islemleri</h4>
 		<div class="row">
 			<div class="col-md-12">
 				<div class="card">
 					<div class="card-header">
-						<div class="card-title">Kategori Listesi</div>
+						<div class="card-title">Urun Listesi</div>
 					</div>
 					<div class="card-body">
 						<div class="card-sub">
-							Kategori ile ilgili islemleri asagidan gerceklestirebilirsiniz :
+							Urun ile ilgili islemleri asagidan gerceklestirebilirsiniz :
 						</div>
 						<table class="table mt-3">
 							<thead>
 								<tr>
 									<th scope="col">#</th>
-									<th scope="col">Kategori Adi</th>
+									<th scope="col">Urun Adi</th>
+									<th scope="col">Fiyat</th>
+									<th scope="col">Kategori</th>
 									<th scope="col">Durum</th>
 									<th scope="col">Sil</th>
 									<th scope="col">Guncelle</th>
@@ -33,17 +35,20 @@
 									<tr>
 										<td>@item.Id</td>
 										<td>@item.Name</td>
-										<td>@item.Status</td>
-										<td><a href="/AdminCategories/Update/@item.Id" class="btn btn-success">Guncelle</a></td>
-										<td><a href="/AdminCategories/Delete/@item.Id" class="btn btn-danger">Sil</a></td>
+										<td>@item.Price</td>
+										<td>@item.CategoryName</td>
+										<td>@item.ProductStatus</td>
+										<td><a href="/AdminProducts/Update/@item.Id" class="btn btn-success">Guncelle</a></td>
+										<td><a href="/AdminProducts/Delete/@item.Id" class="btn btn-danger">Sil</a></td>
 									</tr>
 								}
 							</tbody>
 						</table>
-						<a href="/AdminCategories/Create/" class="btn btn-primary">Ekle</a>
+						<a href="/AdminProducts/Create/" class="btn btn-primary">Ekle</a>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
 </div>
+

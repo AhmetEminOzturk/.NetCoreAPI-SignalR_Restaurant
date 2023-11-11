@@ -32,6 +32,18 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5MYXlvdXRzXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/GitHub/.NetCoreAPI-SignalR_Restaurant/Restaurant/Presentation/Restaurant.Presentation.WebUI/Views/AdminProducts/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5Qcm9kdWN0c1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/GitHub/.NetCoreAPI-SignalR_Restaurant/Restaurant/Presentation/Restaurant.Presentation.WebUI/Views/AdminProducts/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5Qcm9kdWN0c1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/GitHub/.NetCoreAPI-SignalR_Restaurant/Restaurant/Presentation/Restaurant.Presentation.WebUI/Views/AdminProducts/Update.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5Qcm9kdWN0c1xVcGRhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/GitHub/.NetCoreAPI-SignalR_Restaurant/Restaurant/Presentation/Restaurant.Presentation.WebUI/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 

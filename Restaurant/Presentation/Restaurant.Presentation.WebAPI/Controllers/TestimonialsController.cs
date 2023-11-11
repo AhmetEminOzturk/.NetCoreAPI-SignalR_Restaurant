@@ -40,7 +40,7 @@ namespace Restaurant.Presentation.WebAPI.Controllers
             _testimonialService.TUpdate(genericTestimonialDto);
             return Ok();
         }
-        [HttpDelete]
+        [HttpDelete("{id}")]
         public IActionResult Delete(int id)
         {
             _testimonialService.TDelete(id);

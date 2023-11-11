@@ -1,0 +1,47 @@
+﻿@model GenericAboutDto
+@{
+    ViewData["Title"] = "Update";
+    Layout = "~/Views/AdminLayouts/Index.cshtml";
+}
+
+<div class="content">
+	<div class="container-fluid">
+		<h4 class="page-title">Hakkimizda Islemleri</h4>
+		<div class="row">
+			<div class="col-md-12">
+				<form method="post">
+					<input type="hidden" asp-for="Id" />
+					<div class="card">
+						<div class="card-header">
+							<div class="card-title">Hakkimizda Guncelleme Islemleri</div>
+						</div>
+						<div class="card-body">
+							<div class="form-group">
+								<label for="title">Baslik</label>
+								<input type="text" class="form-control" asp-for="Title" id="title">
+							</div>
+						</div>
+						<div class="card-body">
+							<div class="form-group">
+								<label for="imageurl">Gorsel</label>
+								<input type="text" class="form-control" asp-for="ImageUrl" id="imageurl">
+							</div>
+						</div>
+						<div class="card-body">
+							<div class="form-group">
+								<label for="description">Aciklama</label>
+								<textarea rows="5" asp-for="Description" class="form-control" id="description"></textarea>
+							</div>
+						</div>
+						<div class="card-action">
+							<button class="btn btn-success">Guncelle</button>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+

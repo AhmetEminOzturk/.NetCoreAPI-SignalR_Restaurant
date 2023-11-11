@@ -16,6 +16,22 @@ builder.Services.AddHttpClient<ProductApiService>(opt =>
 {
 	opt.BaseAddress = new Uri(builder.Configuration["BaseUrl"]);
 });
+builder.Services.AddHttpClient<AboutApiService>(opt =>
+{
+	opt.BaseAddress = new Uri(builder.Configuration["BaseUrl"]);
+});
+builder.Services.AddHttpClient<BookingApiService>(opt =>
+{
+	opt.BaseAddress = new Uri(builder.Configuration["BaseUrl"]);
+});
+builder.Services.AddHttpClient<ContactApiService>(opt =>
+{
+	opt.BaseAddress = new Uri(builder.Configuration["BaseUrl"]);
+});
+builder.Services.AddHttpClient<DiscountApiService>(opt =>
+{
+	opt.BaseAddress = new Uri(builder.Configuration["BaseUrl"]);
+});
 
 var app = builder.Build();
 

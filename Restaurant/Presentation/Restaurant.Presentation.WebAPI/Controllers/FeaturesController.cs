@@ -40,7 +40,7 @@ namespace Restaurant.Presentation.WebAPI.Controllers
             _featureService.TUpdate(genericFeatureDto);
             return Ok();
         }
-        [HttpDelete]
+        [HttpDelete("{id}")]
         public IActionResult Delete(int id)
         {
             _featureService.TDelete(id);

@@ -1,0 +1,51 @@
+﻿@model GenericContactDto
+@{
+    ViewData["Title"] = "Update";
+    Layout = "~/Views/AdminLayouts/Index.cshtml";
+}
+
+<div class="content">
+	<div class="container-fluid">
+		<h4 class="page-title">Iletisim Islemleri</h4>
+		<div class="row">
+			<div class="col-md-12">
+				<form method="post">
+					<input type="hidden" asp-for="Id" />
+					<div class="card">
+						<div class="card-header">
+							<div class="card-title">Yeni Iletisim Girisi</div>
+						</div>
+						<div class="card-body">
+							<div class="form-group">
+								<label for="Location">Lokasyon</label>
+								<input type="text" class="form-control" asp-for="Location" id="Location">
+							</div>
+						</div>
+						<div class="card-body">
+							<div class="form-group">
+								<label for="Phone">Telefon</label>
+								<input type="text" class="form-control" asp-for="Phone" id="Phone">
+							</div>
+						</div>
+						<div class="card-body">
+							<div class="form-group">
+								<label for="Mail">Mail</label>
+								<input type="text" class="form-control" asp-for="Mail" id="Mail">
+							</div>
+						</div>
+						<div class="card-body">
+							<div class="form-group">
+								<label for="Description">Aciklama</label>
+								<textarea rows="5" asp-for="FooterDescription" class="form-control" id="Description"></textarea>
+							</div>
+						</div>
+						<div class="card-action">
+							<button class="btn btn-success">Guncelle</button>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+

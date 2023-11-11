@@ -40,7 +40,7 @@ namespace Restaurant.Presentation.WebAPI.Controllers
             _socialMediaService.TUpdate(genericSocialMediaDto);
             return Ok();
         }
-        [HttpDelete]
+        [HttpDelete("{id}")]
         public IActionResult Delete(int id)
         {
             _socialMediaService.TDelete(id);

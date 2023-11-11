@@ -40,7 +40,7 @@ namespace Restaurant.Presentation.WebAPI.Controllers
             _contactService.TUpdate(genericContactDto);
             return Ok();
         }
-        [HttpDelete]
+        [HttpDelete("{id}")]
         public IActionResult Delete(int id)
         {
             _contactService.TDelete(id);

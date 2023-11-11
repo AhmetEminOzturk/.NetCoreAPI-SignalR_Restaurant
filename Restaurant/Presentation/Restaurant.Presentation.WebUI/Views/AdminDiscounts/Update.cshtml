@@ -1,0 +1,50 @@
+﻿@model GenericDiscountDto
+@{
+    ViewData["Title"] = "Update";
+    Layout = "~/Views/AdminLayouts/Index.cshtml";
+}
+
+<div class="content">
+	<div class="container-fluid">
+		<h4 class="page-title">Indirim Islemleri</h4>
+		<div class="row">
+			<div class="col-md-12">
+				<form method="post">
+					<input type="hidden" asp-for="Id" />
+					<div class="card">
+						<div class="card-header">
+							<div class="card-title">Indirim Guncelleme Islemleri</div>
+						</div>
+						<div class="card-body">
+							<div class="form-group">
+								<label for="Title">Urun Adi</label>
+								<input type="text" class="form-control" asp-for="Title" id="Title">
+							</div>
+						</div>
+						<div class="card-body">
+							<div class="form-group">
+								<label for="Amount">Indirim Orani</label>
+								<input type="text" class="form-control" asp-for="Amount" id="Amount">
+							</div>
+						</div>
+						<div class="card-body">
+							<div class="form-group">
+								<label for="ImageUrl">Urun Gorseli</label>
+								<input type="text" class="form-control" asp-for="ImageUrl" id="ImageUrl">
+							</div>
+						</div>
+						<div class="card-body">
+							<div class="form-group">
+								<label for="Description">Urun Aciklamasi</label>
+								<input type="text" class="form-control" asp-for="Description" id="Description">
+							</div>
+						</div>
+						<div class="card-action">
+							<button class="btn btn-success">Guncelle</button>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>

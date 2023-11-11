@@ -16,6 +16,30 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\GitHub\.NetCoreAPI-SignalR_Restaurant\Restaurant\Presentation\Restaurant.Presentation.WebUI
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/GitHub/.NetCoreAPI-SignalR_Restaurant/Restaurant/Presentation/Restaurant.Presentation.WebUI/Views/AdminAbouts/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5BYm91dHNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/GitHub/.NetCoreAPI-SignalR_Restaurant/Restaurant/Presentation/Restaurant.Presentation.WebUI/Views/AdminAbouts/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5BYm91dHNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/GitHub/.NetCoreAPI-SignalR_Restaurant/Restaurant/Presentation/Restaurant.Presentation.WebUI/Views/AdminAbouts/Update.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5BYm91dHNcVXBkYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/GitHub/.NetCoreAPI-SignalR_Restaurant/Restaurant/Presentation/Restaurant.Presentation.WebUI/Views/AdminBookings/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5Cb29raW5nc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/GitHub/.NetCoreAPI-SignalR_Restaurant/Restaurant/Presentation/Restaurant.Presentation.WebUI/Views/AdminBookings/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5Cb29raW5nc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/GitHub/.NetCoreAPI-SignalR_Restaurant/Restaurant/Presentation/Restaurant.Presentation.WebUI/Views/AdminBookings/Update.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5Cb29raW5nc1xVcGRhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/GitHub/.NetCoreAPI-SignalR_Restaurant/Restaurant/Presentation/Restaurant.Presentation.WebUI/Views/AdminCategories/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5DYXRlZ29yaWVzXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -26,6 +50,30 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/GitHub/.NetCoreAPI-SignalR_Restaurant/Restaurant/Presentation/Restaurant.Presentation.WebUI/Views/AdminCategories/Update.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5DYXRlZ29yaWVzXFVwZGF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/GitHub/.NetCoreAPI-SignalR_Restaurant/Restaurant/Presentation/Restaurant.Presentation.WebUI/Views/AdminContacts/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5Db250YWN0c1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/GitHub/.NetCoreAPI-SignalR_Restaurant/Restaurant/Presentation/Restaurant.Presentation.WebUI/Views/AdminContacts/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5Db250YWN0c1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/GitHub/.NetCoreAPI-SignalR_Restaurant/Restaurant/Presentation/Restaurant.Presentation.WebUI/Views/AdminContacts/Update.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5Db250YWN0c1xVcGRhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/GitHub/.NetCoreAPI-SignalR_Restaurant/Restaurant/Presentation/Restaurant.Presentation.WebUI/Views/AdminDiscounts/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5EaXNjb3VudHNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/GitHub/.NetCoreAPI-SignalR_Restaurant/Restaurant/Presentation/Restaurant.Presentation.WebUI/Views/AdminDiscounts/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5EaXNjb3VudHNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/GitHub/.NetCoreAPI-SignalR_Restaurant/Restaurant/Presentation/Restaurant.Presentation.WebUI/Views/AdminDiscounts/Update.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5EaXNjb3VudHNcVXBkYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/GitHub/.NetCoreAPI-SignalR_Restaurant/Restaurant/Presentation/Restaurant.Presentation.WebUI/Views/AdminLayouts/Index.cshtml]

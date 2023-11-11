@@ -1,0 +1,50 @@
+﻿@model CreateTestimonialRequest
+@{
+    ViewData["Title"] = "Create";
+    Layout = "~/Views/AdminLayouts/Index.cshtml";
+}
+
+<div class="content">
+	<div class="container-fluid">
+		<h4 class="page-title">Musteri Yorum Islemleri</h4>
+		<div class="row">
+			<div class="col-md-12">
+				<form method="post">
+					<div class="card">
+						<div class="card-header">
+							<div class="card-title">Yeni Musteri Yorum Girisi</div>
+						</div>
+						<div class="card-body">
+							<div class="form-group">
+								<label for="name">Musteri Adi Soyadi</label>
+								<input type="text" class="form-control" asp-for="Name" id="name">
+							</div>
+						</div>
+						<div class="card-body">
+							<div class="form-group">
+								<label for="Title">Musteri Unvani</label>
+								<input type="text" class="form-control" asp-for="Title" id="Title">
+							</div>
+						</div>
+						<div class="card-body">
+							<div class="form-group">
+								<label for="ImageUrl">Musteri Resim Dosya Yolu</label>
+								<input type="text" class="form-control" asp-for="ImageUrl" id="ImageUrl">
+							</div>
+						</div>
+						<div class="card-body">
+							<div class="form-group">
+								<label for="Comment">Musteri Yorumu</label>
+								<input type="text" class="form-control" asp-for="Comment" id="Comment">
+							</div>
+						</div>
+						<div class="card-action">
+							<button class="btn btn-primary">Ekle</button>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+

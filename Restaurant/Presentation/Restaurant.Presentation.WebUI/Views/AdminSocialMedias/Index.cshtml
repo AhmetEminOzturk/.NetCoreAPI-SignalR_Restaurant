@@ -1,0 +1,50 @@
+﻿@model List<GenericSocialMediaDto>
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/AdminLayouts/Index.cshtml";
+}
+
+<div class="content">
+	<div class="container-fluid">
+		<h4 class="page-title">Sosyal Medya Islemleri</h4>
+		<div class="row">
+			<div class="col-md-12">
+				<div class="card">
+					<div class="card-header">
+						<div class="card-title">Sosyal Medya Listesi</div>
+					</div>
+					<div class="card-body">
+						<div class="card-sub">
+							Sosyal Medya ile ilgili islemleri asagidan gerceklestirebilirsiniz :
+						</div>
+						<table class="table mt-3">
+							<thead>
+								<tr>
+									<th scope="col">#</th>
+									<th scope="col">Baslik</th>
+									<th scope="col">Link</th>
+									<th scope="col">Sil</th>
+									<th scope="col">Guncelle</th>
+								</tr>
+							</thead>
+							<tbody>
+								@foreach (var item in Model)
+								{
+									<tr>
+										<td>@item.Id</td>
+										<td>@item.Title</td>
+										<td>@item.Url</td>
+										<td><a href="/AdminSocialMedias/Update/@item.Id" class="btn btn-success">Guncelle</a></td>
+										<td><a href="/AdminSocialMedias/Delete/@item.Id" class="btn btn-danger">Sil</a></td>
+									</tr>
+								}
+							</tbody>
+						</table>
+						<a href="/AdminSocialMedias/Create/" class="btn btn-primary">Ekle</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+

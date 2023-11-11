@@ -32,6 +32,18 @@ builder.Services.AddHttpClient<DiscountApiService>(opt =>
 {
 	opt.BaseAddress = new Uri(builder.Configuration["BaseUrl"]);
 });
+builder.Services.AddHttpClient<FeatureApiService>(opt =>
+{
+	opt.BaseAddress = new Uri(builder.Configuration["BaseUrl"]);
+});
+builder.Services.AddHttpClient<SocialMediaApiService>(opt =>
+{
+	opt.BaseAddress = new Uri(builder.Configuration["BaseUrl"]);
+});
+builder.Services.AddHttpClient<TestimonialApiService>(opt =>
+{
+	opt.BaseAddress = new Uri(builder.Configuration["BaseUrl"]);
+});
 
 var app = builder.Build();
 

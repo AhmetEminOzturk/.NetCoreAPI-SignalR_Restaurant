@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "ZRHGgWCFTXpg/pSv2EaKY6SifzdSEnvH2qqgpbpr2oo=",
+  "Hash": "UMa+JTZJ1EKkv5ydG9hZZeEmlrnddjOgxAY931hHGPQ=",
   "Source": "Restaurant.Presentation.WebUI",
   "BasePath": "_content/Restaurant.Presentation.WebUI",
   "Mode": "Default",
@@ -2395,6 +2395,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Identity": "C:\\GitHub\\.NetCoreAPI-SignalR_Restaurant\\Restaurant\\Presentation\\Restaurant.Presentation.WebUI\\wwwroot\\lib\\microsoft\\signalr\\dist\\browser\\signalr.js",
+      "SourceId": "Restaurant.Presentation.WebUI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\GitHub\\.NetCoreAPI-SignalR_Restaurant\\Restaurant\\Presentation\\Restaurant.Presentation.WebUI\\wwwroot\\",
+      "BasePath": "_content/Restaurant.Presentation.WebUI",
+      "RelativePath": "lib/microsoft/signalr/dist/browser/signalr.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\lib\\microsoft\\signalr\\dist\\browser\\signalr.js"
+    },
+    {
+      "Identity": "C:\\GitHub\\.NetCoreAPI-SignalR_Restaurant\\Restaurant\\Presentation\\Restaurant.Presentation.WebUI\\wwwroot\\lib\\microsoft\\signalr\\dist\\browser\\signalr.min.js",
+      "SourceId": "Restaurant.Presentation.WebUI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\GitHub\\.NetCoreAPI-SignalR_Restaurant\\Restaurant\\Presentation\\Restaurant.Presentation.WebUI\\wwwroot\\",
+      "BasePath": "_content/Restaurant.Presentation.WebUI",
+      "RelativePath": "lib/microsoft/signalr/dist/browser/signalr.min.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\lib\\microsoft\\signalr\\dist\\browser\\signalr.min.js"
     }
   ]
 }

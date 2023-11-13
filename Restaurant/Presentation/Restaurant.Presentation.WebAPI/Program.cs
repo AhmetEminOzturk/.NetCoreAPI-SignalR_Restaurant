@@ -6,11 +6,23 @@ using Restaurant.Infrastructure.Persistence.Context;
 using Restaurant.Infrastructure.Persistence.Repositories.AboutRepository;
 using Restaurant.Presentation.WebAPI.Modules;
 using Restaurant.Core.Application.Mappings;
+using Restaurant.Presentation.WebAPI.Hubs;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 
+builder.Services.AddCors(opt =>
+{
+    opt.AddPolicy("CorsPolicy", builder =>
+    {
+        builder.AllowAnyHeader()
+               .AllowAnyMethod()
+               .SetIsOriginAllowed((host) => true)
+               .AllowCredentials();
+    });
+});
+builder.Services.AddSignalR();
 builder.Services.AddDbContext<RestaurantDbContext>();
 builder.Services.AddAutoMapper(typeof(MapProfile));
 
@@ -32,10 +44,12 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
+app.UseCors("CorsPolicy");
 app.UseHttpsRedirection();
 
 app.UseAuthorization();
 
 app.MapControllers();
+app.MapHub<SignalRHub>("/signalrhub");
 
 app.Run();

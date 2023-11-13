@@ -254,3 +254,4 @@ C:\GitHub\.NetCoreAPI-SignalR_Restaurant\Restaurant\Presentation\Restaurant.Pres
 C:\GitHub\.NetCoreAPI-SignalR_Restaurant\Restaurant\Presentation\Restaurant.Presentation.WebUI\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
 C:\GitHub\.NetCoreAPI-SignalR_Restaurant\Restaurant\Presentation\Restaurant.Presentation.WebUI\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
 C:\GitHub\.NetCoreAPI-SignalR_Restaurant\Restaurant\Presentation\Restaurant.Presentation.WebUI\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+C:\GitHub\.NetCoreAPI-SignalR_Restaurant\Restaurant\Presentation\Restaurant.Presentation.WebUI\bin\Debug\net6.0\libman.json
